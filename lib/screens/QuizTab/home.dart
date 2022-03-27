@@ -11,12 +11,12 @@ class Quizhomepage extends StatefulWidget {
 
 class _QuizhomepageState extends State<Quizhomepage> {
   List<String> images = [
-    "images/ProcessQuizCircle.png",
-    "images/TechQuizCircle.png",
-    "images/ToolsQuizCircle.png",
-    "images/CommQuizCircle.png",
-    "images/KBQuizCircle.png",
-    "images/AdhocQuizCircle.png",
+    "assets/images/ProcessQuizCircle.png",
+    "assets/images/TechQuizCircle.png",
+    "assets/images/ToolsQuizCircle.png",
+    "assets/images/CommQuizCircle.png",
+    "assets/images/KBQuizCircle.png",
+    "assets/images/AdhocQuizCircle.png",
   ];
 
   List<String> des = [
