@@ -31,15 +31,15 @@ class _QuizhomepageState extends State<Quizhomepage> {
   Widget customcard(String langname, String image, String des) {
     return Padding(
       padding: EdgeInsets.symmetric(
-        vertical: 2.5,
-        horizontal: 6.0,
+        vertical: 1.5,
+        horizontal: 3.0,
       ),
       child: InkWell(
         onTap: () {
           Navigator.of(context).pushReplacement(MaterialPageRoute(
             // in changelog 1 we will pass the quiz name to ther other widget class
             // this name will be used to open a particular JSON file
-            // for a particular language
+            // for a particular quiz
             builder: (context) => getjson(langname),
           ));
         },
@@ -53,7 +53,7 @@ class _QuizhomepageState extends State<Quizhomepage> {
                 SizedBox(width: 6.0),
                 Padding(
                   padding: EdgeInsets.symmetric(
-                    vertical: 10.0,
+                    vertical: 2.0,
                   ),
                   child: Material(
                     elevation: 5.0,
@@ -110,12 +110,31 @@ class _QuizhomepageState extends State<Quizhomepage> {
     ]);
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Quizes",
-          style: TextStyle(
-            fontFamily: "Quando",
-          ),
+        backgroundColor: Color(0xFF473F97),
+        elevation: 0.0,
+        leading: IconButton(
+          icon: const Icon(Icons.menu),
+          iconSize: 28.0,
+          onPressed: () {},
         ),
+        title: Row(
+          //mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              width: 35,
+              //child: Image.network('https://jep-asset.akamaized.net/jio/svg/logo/myjio-n.svg'),
+            ),
+            Container(padding: const EdgeInsets.all(8.0), child: Text('SkillUP', style: TextStyle(fontSize: 17))),
+          ],
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.person),
+            iconSize: 28.0,
+            onPressed: () {},
+            tooltip: 'login',
+          ),
+        ],
       ),
       body: ListView(
         children: <Widget>[
@@ -130,4 +149,3 @@ class _QuizhomepageState extends State<Quizhomepage> {
     );
   }
 }
-
