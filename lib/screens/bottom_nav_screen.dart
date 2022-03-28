@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_covid_dashboard_ui/screens/screens.dart';
+import 'package:flutter_covid_dashboard_ui/screens/QuizTab/home.dart';
+import 'package:flutter_covid_dashboard_ui/screens/TutorialTab/SliverTopbar.dart';
 
 class BottomNavScreen extends StatefulWidget {
   @override
@@ -9,9 +11,8 @@ class BottomNavScreen extends StatefulWidget {
 class _BottomNavScreenState extends State<BottomNavScreen> {
   final List _screens = [
     HomeScreen(),
-    Scaffold(),
-    Scaffold(),
-    //QuizScreen(),
+    Tutorialhomepage(),
+    Quizhomepage(),
     StatsScreen(),
   ];
   int _currentIndex = 0;
@@ -60,3 +61,4 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     );
   }
 }
+    
