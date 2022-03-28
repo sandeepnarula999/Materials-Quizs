@@ -19,17 +19,17 @@ class getjson extends StatelessWidget {
   // and opens the JSON
   setasset() {
     if (quizname == "Process Quiz") {
-      assettoload = "assets/A_ProcessQuizL1.json";
+      assettoload = "A_ProcessQuizL1.json";
     } else if (quizname == "Tech Quiz") {
-      assettoload = "assets/B_TechQuizL1.json";
+      assettoload = "B_TechQuizL1.json";
     } else if (quizname == "Tools Quiz") {
-      assettoload = "assets/C_ToolsQuizL1.json";
+      assettoload = "C_ToolsQuizL1.json";
     } else if (quizname == "Comm Quiz") {
-      assettoload = "assets/D_CommQuizL1.json";
+      assettoload = "D_CommQuizL1.json";
     } else if (quizname == "KB Quiz") {
-      assettoload = "assets/E_KBQuizL1.json";
+      assettoload = "E_KBQuizL1.json";
     } else {
-      assettoload = "assets/F_AdhocQuizL1.json";
+      assettoload = "F_AdhocQuizL1.json";
     }
   }
 
