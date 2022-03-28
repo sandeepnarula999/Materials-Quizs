@@ -95,7 +95,7 @@ class _resultpageState extends State<resultpage> {
                 OutlineButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (context) => Quizhomepage(), 
+                      builder: (context) => Quizhomepage(),
                     ));
                   },
                   child: Text(
