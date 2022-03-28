@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_covid_dashboard_ui/screens/QuizTab/home.dart';
+import 'package:flutter_covid_dashboard_ui/screens/home_screen.dart';
 
 class resultpage extends StatefulWidget {
   int marks;
@@ -94,7 +95,7 @@ class _resultpageState extends State<resultpage> {
                 OutlineButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (context) => Quizhomepage(),
+                      builder: (context) => Quizhomepage(), 
                     ));
                   },
                   child: Text(
@@ -114,7 +115,7 @@ class _resultpageState extends State<resultpage> {
                 OutlineButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (context) => Quizhomepage(),
+                      builder: (context) => HomeScreen(),
                     ));
                   },
                   child: Text(
